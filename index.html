@@ -54,7 +54,10 @@
             <p class="header-subtitle">INSTRUCTIONAL DESIGNER</p>            
         </div>              
     </header><!-- end of page header -->
-
+<audio id="myAudio">
+    <!-- Replace 'your-sound-file.mp3' with the actual path to your sound file -->
+    <source src="assets/imgs/intro.wav" type="audio/mp3">
+</audio>
     <!-- about section -->
     <section class="section pt-0" id="about">
         <!-- container -->
@@ -67,12 +70,17 @@
                 <div class="about-caption">
                     <p class="section-subtitle">Who Am I ?</p>
                     <h2 class="section-title mb-3">About Me</h2>
+                  
+                    <button class="btn-rounded btn btn-outline-primary mt-4" onclick="togglePlayPause()">Play</button>
                     <p style = "text-align:justify">
                         Hello there, 
-                        <br> I am an instructional designer with a passion for creating engaging and effective e-learning courses. With experience designing and developing courses at all levels, from K-12 to corporate compliance training, I have honed my skills in a range of instructional design strategies, including gamification, microlearning, and scenario-based learning. I am well-versed in conducting needs analysis, adhering to WCAG guidelines, and using AI tools for both creation and research purposes.
-                        <br> Over the years, I have had the opportunity to work with a variety of authoring tools such as Rise, Storyline, Camtasia, Slides.com, Comic Life, Canva, PowerPoint, Lectora, Adobe Captivate, and many more. Additionally, I have used cutting-edge AI tools such as chatGPT, Midjourney5, Dall-e, and Resemble to create engaging and immersive learning experiences for my learners.
-                        <br> Whether working as a freelancer or full-time employee, my focus has always been on delivering high-quality, effective courses that meet the needs of my clients and learners. With a hunger for knowledge and a drive to continuously improve, I am always on the lookout for new tools and techniques that can help me streamline my workflow without sacrificing the quality of my deliverables.
-                        <br> If you have any questions or would like to learn more about my work as an instructional designer, please don't hesitate to reach out!
+                        <br> I am an instructional designer whose ardor is crafting educational experiences and captivating and highly effective e-learning courses. My expertise spans diverse educational landscapes, ranging from K-12 to the intricate terrain of corporate compliance training.
+<br> In the intricate tapestry of instructional design, I have skilfully woven together a plethora of strategies, employing the artistry of gamification, the efficiency of microlearning, and the richness of scenario-based learning. Guided by a nuanced understanding of learning theories, learning modalities, and pedagogical approaches my proficiency extends beyond the creative process, encompassing the meticulous conduct of needs analysis, unwavering adherence to WCAG guidelines, and the strategic integration of AI tools for both creation and research endeavors.
+<br> Venturing into the digital realm, I have adeptly navigated through a diverse array of authoring tools, seamlessly blending creativity and functionality. Tools such as Rise, Storyline, Camtasia, Slides.com, Comic Life, Canva, PowerPoint, Lectora, Adobe Captivate, and a myriad of others have been my instruments of choice. Moreover, I have harnessed the power of cutting-edge AI tools, including but not limited to ChatGPT, Midjourney5, Dall-e, WellSaid Labs, and Resemble, to fashion learning experiences that transcend the conventional.
+<br>Whether functioning as a freelance virtuoso or as a dedicated full-time professional, my unwavering focus remains on delivering impeccable courses that meet clients' demands and resonate profoundly with learners. My insatiable thirst for knowledge and an unyielding drive to refine my craft propel me to continually seek out innovative tools and techniques, ensuring that my workflow evolves without compromising the excellence of my deliverables.
+<br> Should you wish to delve deeper into the intricacies of my work as an instructional designer or have any inquiries, I warmly welcome you to reach out. Together, let us unravel the possibilities of transformative learning experiences.
+
+
              
                     </p>
                     <a id='link' href="assets/imgs/CV.pdf" download="Ankita's CV">  <button class="btn-rounded btn btn-outline-primary mt-4" onclick="document.getElementById('link').click()">Download CV</button> </a>
@@ -245,6 +253,24 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
+    <script>
+    // JavaScript function to toggle between playing and pausing the sound
+    function togglePlayPause() {
+        // Get the audio element
+        var audio = document.getElementById("myAudio");
+        // Get the button element
+        var button = document.querySelector("button");
+
+        // Check if the audio is paused, then play it; otherwise, pause it
+        if (audio.paused) {
+            audio.play();
+            button.textContent = "Pause";
+        } else {
+            audio.pause();
+            button.textContent = "Play";
+        }
+    }
+</script>
 
 </body>
 </html>
