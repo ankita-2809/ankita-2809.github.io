@@ -54,10 +54,6 @@
             <p class="header-subtitle">INSTRUCTIONAL DESIGNER</p>            
         </div>              
     </header><!-- end of page header -->
-<audio id="myAudio">
-    <!-- Replace 'your-sound-file.mp3' with the actual path to your sound file -->
-    <source src="assets/imgs/intro.wav" type="audio/mp3">
-</audio>
     <!-- about section -->
     <section class="section pt-0" id="about">
         <!-- container -->
@@ -70,10 +66,11 @@
                 <div class="about-caption">
                     <p class="section-subtitle">Who Am I ?</p>
                     <h2 class="section-title mb-3">About Me</h2>
-                  
-                    <button class="btn-rounded btn btn-outline-primary mt-4" onclick="togglePlayPause()">Play</button>
+                  <audio class="player" playsinline="" controls="">
+                        <source src="assets/imgs/Intro.wav" type="audio/mp3">
+                    </audio>
                     <p style = "text-align:justify">
-                        Hello there, 
+                        Hi there, 
                         <br> I am an instructional designer whose ardor is crafting educational experiences and captivating and highly effective e-learning courses. My expertise spans diverse educational landscapes, ranging from K-12 to the intricate terrain of corporate compliance training.
 <br> In the intricate tapestry of instructional design, I have skilfully woven together a plethora of strategies, employing the artistry of gamification, the efficiency of microlearning, and the richness of scenario-based learning. Guided by a nuanced understanding of learning theories, learning modalities, and pedagogical approaches my proficiency extends beyond the creative process, encompassing the meticulous conduct of needs analysis, unwavering adherence to WCAG guidelines, and the strategic integration of AI tools for both creation and research endeavors.
 <br> Venturing into the digital realm, I have adeptly navigated through a diverse array of authoring tools, seamlessly blending creativity and functionality. Tools such as Rise, Storyline, Camtasia, Slides.com, Comic Life, Canva, PowerPoint, Lectora, Adobe Captivate, and a myriad of others have been my instruments of choice. Moreover, I have harnessed the power of cutting-edge AI tools, including but not limited to ChatGPT, Midjourney5, Dall-e, WellSaid Labs, and Resemble, to fashion learning experiences that transcend the conventional.
@@ -253,24 +250,6 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
-    <script>
-    // JavaScript function to toggle between playing and pausing the sound
-    function togglePlayPause() {
-        // Get the audio element
-        var audio = document.getElementById("myAudio");
-        // Get the button element
-        var button = document.querySelector("button");
-
-        // Check if the audio is paused, then play it; otherwise, pause it
-        if (audio.paused) {
-            audio.play();
-            button.textContent = "Pause";
-        } else {
-            audio.pause();
-            button.textContent = "Play";
-        }
-    }
-</script>
 
 </body>
 </html>
