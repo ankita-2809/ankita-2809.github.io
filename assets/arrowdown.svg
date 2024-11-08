@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="23px" viewBox="0 0 40 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow_down</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M2.6914442,0 L37.3085558,0 C39.7033657,0 40.9007706,2.89260746 39.2055681,4.58780997 L21.9037393,21.9030928 C20.8543282,22.9525038 19.1456718,22.9525038 18.0962607,21.9030928 L0.794431868,4.58780997 C-0.900770644,2.89260746 0.296634305,0 2.6914442,0 Z" id="arrow_down" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg>

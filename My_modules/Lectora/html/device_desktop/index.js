@@ -1,0 +1,30 @@
+DesktopResponsive={"1009":{
+"pageLayer":{"w":1009,"h":662,"bgColor":"#fffbee","bgImage":"images/bkgnd001.gif","bgSize":"1280px 10px","bgRepeat":"repeat-y"}
+,
+"button45":{"B64":{"disabledState":"","downState":"","normalState":"","overState":"","selectedState":"","visitedState":""},"bOffBottom":0,"h":42.0,"i":"images/button45_selected.png","idis":"images/button45_disabled.png","ion":"images/button45_down.png","irol":"images/button45_over.png","p":"M 11.000000 1.000000 L 111.000000 1.000000 L 113.000000 1.187500 L 114.937500 1.812500 L 118.062500 3.937500 L 120.250000 7.125000 L 120.812500 9.000000 L 121.000000 11.000000 L 121.000000 31.000000 L 120.812500 33.000000 L 120.250000 34.937500 L 118.062500 38.062500 L 114.937500 40.250000 L 113.000000 40.812500 L 111.000000 41.000000 L 11.000000 41.000000 L 7.187500 40.250000 L 3.937500 38.125000 L 1.750000 34.875000 L 1.187500 33.000000 L 1.000000 31.000000 L 1.000000 11.000000 L 1.187500 9.000000 L 1.812500 7.125000 L 3.937500 3.937500 L 7.125000 1.812500 L 9.000000 1.187500 L 11.000000 1.000000 z","stylemods":[{"decl":" { position:absolute; top:1.000000px; left:1.000000px; display:flex; justify-content:center; align-items:center; width:120.000000px; height:40.000000px;}","sel":"div.button45Text"},{"decl":" { width:112.000000px; margin-right:5px; margin-left:5px; text-align:center; line-height:21px; font-size:21px; font-family:\"Palatino Linotype\"; color:#000000;}","sel":"span.button45Text"},{"decl":" { position:absolute; top:1.000000px; left:1.000000px; display:flex; justify-content:center; align-items:center; width:120.000000px; height:40.000000px;}","sel":"div.button45overStateText"},{"decl":" { width:112.000000px; margin-right:5px; margin-left:5px; text-align:center; line-height:21px; font-size:21px; font-family:\"Palatino Linotype\"; color:#000000;}","sel":"span.button45overStateText"},{"decl":" { position:absolute; top:1.000000px; left:1.000000px; display:flex; justify-content:center; align-items:center; width:120.000000px; height:40.000000px;}","sel":"div.button45downStateText"},{"decl":" { width:112.000000px; margin-right:5px; margin-left:5px; text-align:center; line-height:21px; font-size:21px; font-family:\"Palatino Linotype\"; color:#000000;}","sel":"span.button45downStateText"},{"decl":" { position:absolute; top:1.000000px; left:1.000000px; display:flex; justify-content:center; align-items:center; width:120.000000px; height:40.000000px;}","sel":"div.button45disabledStateText"},{"decl":" { width:112.000000px; margin-right:5px; margin-left:5px; text-align:center; line-height:21px; font-size:21px; font-family:\"Palatino Linotype\"; color:#000000;}","sel":"span.button45disabledStateText"},{"decl":" { position:absolute; top:1.000000px; left:1.000000px; display:flex; justify-content:center; align-items:center; width:120.000000px; height:40.000000px;}","sel":"div.button45visitedStateText"},{"decl":" { width:112.000000px; margin-right:5px; margin-left:5px; text-align:center; line-height:21px; font-size:21px; font-family:\"Palatino Linotype\"; color:#000000;}","sel":"span.button45visitedStateText"},{"decl":" { position:absolute; top:1.000000px; left:1.000000px; display:flex; justify-content:center; align-items:center; width:120.000000px; height:40.000000px;}","sel":"div.button45selectedStateText"},{"decl":" { width:112.000000px; margin-right:5px; margin-left:5px; text-align:center; line-height:21px; font-size:21px; font-family:\"Palatino Linotype\"; color:#000000;}","sel":"span.button45selectedStateText"}],"w":122.0,"x":228,"y":444}
+,
+"text1279":{"x":22,"y":131,"w":549,"h":255,"txtscale":100,"bOffBottom":0}
+,
+"text1758":{"x":22,"y":391,"w":550,"h":32,"txtscale":100,"bOffBottom":0}
+,
+"image1822":{"x":579,"y":271,"w":350,"h":260,"bOffBottom":0,"i":"images/vegie_bowl.png"}
+,
+"image1827":{"x":661,"y":63,"w":217,"h":247,"bOffBottom":0,"i":"images/vegies_flowing_out_of_bowl.png"}
+,
+"image2175":{"x":55,"y":550,"w":72,"h":97,"bOffBottom":0,"i":"images/avacado1.png"}
+,
+"image9069":{"x":816,"y":33,"w":87,"h":77,"bOffBottom":0,"i":"images/mushroom1.png"}
+,
+"image9098":{"x":21,"y":0,"w":112,"h":130,"bOffBottom":0,"i":"images/leaf1.png"}
+,
+"image2395":{"x":883,"y":570,"w":82,"h":81,"bOffBottom":0,"i":"images/small_leaf1.png"}
+,
+"image2183":{"x":476,"y":561,"w":102,"h":84,"bOffBottom":0,"i":"images/tomato1.png"}
+,
+"RCDResetQuestion":function(){
+try{if(window.dragMgr)window.dragMgr.clearDropZones();}catch(e){if(e&&e.message)console.log(e.message);}
+}
+,
+"RCDResultResize":function(){}
+,"preload":['images/vegie_bowl.png','images/vegies_flowing_out_of_bowl.png','images/avacado1.png','images/small_leaf1.png','images/tomato1.png','images/mushroom1.png','images/leaf1.png','images/button45.png','images/button45_over.png','images/button45_down.png','images/button45_disabled.png','images/button45_visited.png','images/button45_selected.png']
+}}
