@@ -1,0 +1,118 @@
+/* Author Header Styles */
+.author-header {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.author-name {
+  margin: 0;
+  color: #5B9BD5;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.linkedin-link {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.linkedin-link:hover {
+  transform: scale(1.1);
+}
+
+.linkedin-icon {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+/* Blue Gradient Button Styles */
+.hero__btn {
+  background: linear-gradient(135deg, #5B9BD5 0%, #3A7CA5 100%) !important;
+  border: none !important;
+  color: #fff !important;
+  transition: all 0.3s ease;
+}
+
+.hero__btn:hover {
+  background: linear-gradient(135deg, #4A8AC4 0%, #2B6B94 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(91, 155, 213, 0.4);
+}
+
+.hero__btn.hero__btn--secondary {
+  background: linear-gradient(135deg, #5B9BD5 0%, #3A7CA5 100%) !important;
+  color: #fff !important;
+}
+
+.hero__btn.hero__btn--secondary:hover {
+  background: linear-gradient(135deg, #4A8AC4 0%, #2B6B94 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(91, 155, 213, 0.4);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 991px) {
+  .author-header {
+    top: 15px;
+    left: 15px;
+    padding: 8px 15px;
+  }
+  
+  .author-name {
+    font-size: 18px;
+  }
+  
+  .linkedin-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .author-header {
+    top: 10px;
+    left: 10px;
+    padding: 6px 12px;
+    gap: 10px;
+  }
+  
+  .author-name {
+    font-size: 16px;
+  }
+  
+  .linkedin-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .author-header {
+    top: 8px;
+    left: 8px;
+    padding: 5px 10px;
+    gap: 8px;
+  }
+  
+  .author-name {
+    font-size: 14px;
+  }
+  
+  .linkedin-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,284 @@
+<style>
+
+    .timeline-section {
+        background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+        padding: 80px 20px;
+        min-height: 100vh;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .timeline-header {
+        text-align: center;
+        margin-bottom: 50px;
+        animation: fadeInDown 1s ease;
+    }
+
+    .timeline-header h1 {
+        font-size: 2.5rem;
+        color: #2D5F9E;
+        font-weight: 900;
+        letter-spacing: 4px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .timeline-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .timeline-line {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(180deg, #2D5F9E 0%, #5B9BD5 100%);
+        border-radius: 2px;
+    }
+
+    .timeline-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
+        position: relative;
+        opacity: 0;
+        animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .timeline-item:nth-child(1) { animation-delay: 0.2s; }
+    .timeline-item:nth-child(2) { animation-delay: 0.4s; }
+    .timeline-item:nth-child(3) { animation-delay: 0.6s; }
+    .timeline-item:nth-child(4) { animation-delay: 0.8s; }
+
+    .timeline-content {
+        width: 45%;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        padding: 30px;
+        border-radius: 15px;
+        border: 2px solid rgba(45, 95, 158, 0.3);
+        transition: all 0.4s ease;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .timeline-content:hover {
+        transform: scale(1.05);
+        background: rgba(45, 95, 158, 0.1);
+        border-color: #2D5F9E;
+        box-shadow: 0 10px 40px rgba(45, 95, 158, 0.3);
+    }
+
+    .timeline-content.active {
+        background: rgba(45, 95, 158, 0.15);
+        border-color: #2D5F9E;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-left: auto;
+    }
+
+    .timeline-dot {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 24px;
+        height: 24px;
+        background: #2D5F9E;
+        border: 4px solid #1a1a1a;
+        border-radius: 50%;
+        z-index: 10;
+        transition: all 0.3s ease;
+    }
+
+    .timeline-content:hover ~ .timeline-dot,
+    .timeline-content.active ~ .timeline-dot {
+        width: 32px;
+        height: 32px;
+        background: #fff;
+        box-shadow: 0 0 20px rgba(45, 95, 158, 0.8);
+    }
+
+    .timeline-year {
+        font-size: 2rem;
+        color: #2D5F9E;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .timeline-title {
+        font-size: 1.5rem;
+        color: #ffffff;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .timeline-description {
+        color: #cccccc;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .timeline-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .tag {
+        background: rgba(45, 95, 158, 0.2);
+        color: #5B9BD5;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        border: 1px solid rgba(45, 95, 158, 0.4);
+        transition: all 0.3s ease;
+    }
+
+    .timeline-content:hover .tag {
+        background: rgba(45, 95, 158, 0.3);
+        color: #fff;
+    }
+
+    .skills-section {
+        margin-top: 60px;
+        text-align: center;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 15px;
+        border: 2px solid rgba(45, 95, 158, 0.2);
+        animation: fadeInUp 1s ease 1s both;
+    }
+
+    .skills-section h2 {
+        color: #2D5F9E;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .skill-card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 25px;
+        border-radius: 12px;
+        border: 2px solid rgba(45, 95, 158, 0.2);
+        transition: all 0.3s ease;
+    }
+
+    .skill-card:hover {
+        transform: translateY(-10px);
+        border-color: #2D5F9E;
+        box-shadow: 0 10px 30px rgba(45, 95, 158, 0.3);
+    }
+
+    .skill-card h3 {
+        color: #2D5F9E;
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .skill-card ul {
+        list-style: none;
+        color: #cccccc;
+        text-align: left;
+    }
+
+    .skill-card li {
+        padding: 8px 0;
+        padding-left: 20px;
+        position: relative;
+    }
+
+    .skill-card li:before {
+        content: "▸";
+        position: absolute;
+        left: 0;
+        color: #2D5F9E;
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .timeline-header h1 {
+            font-size: 2.5rem;
+        }
+
+        .timeline-line {
+            left: 30px;
+        }
+
+        .timeline-item {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 60px;
+        }
+
+        .timeline-content {
+            width: 100%;
+            margin-left: 0 !important;
+        }
+
+        .timeline-dot {
+            left: 30px;
+        }
+
+        .skills-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .expand-icon {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: #2D5F9E;
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+    }
+
+    .timeline-content.active .expand-icon {
+        transform: rotate(180deg);
+    }
+
+    .extra-info {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+    }
+
+    .timeline-content.active .extra-info {
+        max-height: 200px;
+        margin-top: 15px;
+    }
+</style>
